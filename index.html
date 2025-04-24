@@ -558,20 +558,20 @@
     let scrollPosStartups = 0;
     let scrollPosEmpresas = 0;
     const containerStartups = document.querySelector('#startups .flex');
-    const scrollAmountStartups = 380;
+    const scrollAmountStartups = 100;
     const containerEmpresas = document.querySelector('#empresas .flex');
-    const scrollAmountEmpresas = 380;
+    const scrollAmountEmpresas = 100;
     setInterval(() => {
       if (!containerStartups) return;
       scrollPosStartups = (scrollPosStartups + scrollAmountStartups) % containerStartups.scrollWidth;
       containerStartups.scrollTo({ left: scrollPosStartups, behavior: 'smooth' });
-    }, 1500);
+    }, 1000);
 
     setInterval(() => {
       if (!containerEmpresas) return;
       scrollPosEmpresas = (scrollPosEmpresas + scrollAmountEmpresas) % containerEmpresas.scrollWidth;
       containerEmpresas.scrollTo({ left: scrollPosEmpresas, behavior: 'smooth' });
-    }, 1500);
+    }, 1000);
 
     // function scrollLeft() {
     //   container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
