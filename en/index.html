@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Assis Loureiro da Silva - Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom, #0f172a, #1e293b);
+            background-attachment: fixed;
+            color: #e2e8f0;
+        }
+
+        header {
+            backdrop-filter: blur(10px);
+            background-color: rgba(15, 23, 42, 0.8);
+        }
+
+        section h2 {
+            border-left: 6px solid #3b82f6;
+            padding-left: 1rem;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+            background-color: #1e293b;
+            color: #e2e8f0;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+        }
+
+        nav a {
+            color: #cbd5e1;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .alternate-area-color {
+            color: #cbd5e1;
+        }
+
+        .flag-switch {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <header class="fixed top-0 left-0 right-0 shadow z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-tight text-blue-400">Daniel Assis Loureiro da Silva</h1>
+            <nav class="space-x-4 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-400">About</a>
+                <!-- <a href="#projetos" class="hover:text-blue-400">Projetos</a> -->
+                <a href="#companies" class="hover:text-blue-400">Companies</a>
+                <a href="#softskills" class="hover:text-blue-400">Soft Skills</a>
+                <a href="#frameworks" class="hover:text-blue-400">Management</a>
+                <a href="#solutions" class="hover:text-blue-400">Solutions</a>
+                <a href="#stack" class="hover:text-blue-400">Technologies</a>
+                <a href="#immersions" class="hover:text-blue-400">Immersions</a>
+                <a href="#experience" class="hover:text-blue-400">Experience</a>
+                <a href="#education" class="hover:text-blue-400">Education</a>
+                <a href="#contact" class="hover:text-blue-400">Contact</a>
+            </nav>
+        </div>
+        <a href="../index.html" class="flag-switch">
+            <img src="https://flagcdn.com/w40/br.png" alt="Português" class="w-8 h-6 border border-white rounded" />
+        </a>
+    </header>
+
+    <main class="pt-28">
+        <section id="about" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl text-blue-400 font-bold mb-8">About Me</h2>
+            <div class="grid md:grid-cols-[auto,1fr] items-center gap-4">
+                <div class="max-w-[200px]">
+                    <img src="../photo.png" alt="Foto de Daniel Loureiro"
+                        class="rounded-full w-48 h-48 object-contain shadow-md mx-auto md:mx-0" width="200px" />
+                </div>
+                <div>
+                    <p class="alternate-area-color text-lg max-w-2xl">
+                        Specialist in Software Engineering/Architecture and Entrepreneur with over 15 years of
+                        experience in mission-critical platforms,
+                        high-impact engineering, and innovation in the financial sector. I have worked at companies like
+                        Tok&Stok, BRQ, WDEV (Ebix), Stefanini —
+                        and co-founded and scaled startups in the financial and digital entertainment sectors, such as
+                        iVarejo, iBuy, Wyrapay, and Stargaze.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="projetos" class="bg-white py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8">Projetos de Destaque</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-blue-600 p-6 rounded-xl card shadow">
+            <h3 class="text-xl font-semibold mb-2">iVarejo</h3>
+            <p>Plataforma com foco em originação e negociação de recebíveis, esteiras de crédito personalizadas e
+              integração com bancos, e-commerces e fundos de investimento.</p>
+          </div>
+          <div class="bg-blue-600 p-6 rounded-xl card shadow">
+            <h3 class="text-xl font-semibold mb-2">iBuy Adquirente</h3>
+            <p>Originação de recebíveis baseado em Carnê Digital, BNPL(Buy Now Pay Latter), CDC, Risco Cedente, Risco
+              Sacado, com esteiras de crédito + antecipação automática (FDIC).</p>
+          </div>
+          <div class="bg-blue-600 p-6 rounded-xl card shadow">
+            <h3 class="text-xl font-semibold mb-2">Wyrapay</h3>
+            <p>Plataforma cloud native de pagamentos e settlements com PIX, moedas estrangeiras e crypto. Gateway
+              multibanco com arquitetura serverless e foco em segurança e compliance.</p>
+          </div>
+          <div class="bg-blue-600 p-6 rounded-xl card shadow">
+            <h3 class="text-xl font-semibold mb-2">Stargaze</h3>
+            <p>Infraestrutura completa para provisionamento de jogos de casino online, com engines para crash, slots e
+              jogos instantâneos. Baseada em microserviços e eventos.</p>
+          </div>
+          <div class="bg-blue-600 p-6 rounded-xl card shadow">
+            <h3 class="text-xl font-semibold mb-2">Safra Office Banking</h3>
+            <p>Internet Banking do Safra Private Banking New York com suporte a internal transfers, US banking transfers
+              e Swift/IBAN transfers.</p>
+          </div>
+          <div class="bg-blue-600 p-6 rounded-xl card shadow">
+            <h3 class="text-xl font-semibold mb-2">Safra Funds</h3>
+            <p>Plataforma de content management orientada a lançamento de resultados da Asset.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+        <section id="companies" class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8">Companies I've Worked At</h2>
+                <div class="relative overflow-hidden">
+                    <div class="flex space-x-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
+                        <div
+                            class="min-w-[140px] snap-center shrink-0 card p-4 rounded-xl flex items-center justify-center shadow">
+                            <img src="https://www.tokstok.com.br/tokstok.svg" alt="TokStok"
+                                class="h-12 object-contain" />
+                        </div>
+                        <div
+                            class="min-w-[140px] snap-center shrink-0 card p-4 rounded-xl flex items-center justify-center shadow">
+                            <img src="https://www.brq.com/wp-content/uploads/2023/03/brq-logo.svg" alt="BRQ"
+                                class="h-12 object-contain" />
+                        </div>
+                        <div
+                            class="min-w-[140px] snap-center shrink-0 card bg-white p-4 rounded-xl flex items-center justify-center shadow">
+                            <img src="https://stefanini.com/pt-br/wp-content/uploads/sites/3/2022/07/stefanini_logo-1.png"
+                                alt="Stefanini" class="h-12 object-contain" />
+                        </div>
+                        <div
+                            class="min-w-[140px] snap-center shrink-0 card bg-white p-4 rounded-xl flex items-center justify-center shadow">
+                            <img src="../wdev.png" alt="WDev" />
+                        </div>
+                        <div
+                            class="min-w-[140px] snap-center shrink-0 card p-4 rounded-xl flex items-center justify-center shadow">
+                            <img src="https://montreal.com.br/wp-content/uploads/2025/01/logoBranco.png"
+                                alt="MI Montreal" class="h-12 object-contain" />
+                        </div>
+                        <div
+                            class="min-w-[140px] snap-center shrink-0 card bg-white p-4 rounded-xl flex items-center justify-center shadow">
+                            <img src="../inovax.png" alt="Inovax" class="h-12 object-contain" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="startups" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl text-blue-400 font-bold mb-8">Startups</h2>
+            <div class="relative overflow-hidden">
+                <div class="flex space-x-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
+                    <div class="min-w-[300px] max-w-[350px] snap-center shrink-0 card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Wyrapay</h3>
+                        <p>Payment initiation platform, foreign currency and crypto settlements, and prepaid card
+                            infrastructure.</p>
+                    </div>
+                    <div class="min-w-[300px] max-w-[350px] snap-center shrink-0 card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Stargaze</h3>
+                        <p>Casino games provider and developer of instant/crash/slot engines as a service.</p>
+                    </div>
+                    <div class="min-w-[300px] max-w-[350px] snap-center shrink-0 card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">iVarejo</h3>
+                        <p>Financial platform for receivables origination and credit pipelines including CDC, BNPL, and
+                            receivables marketplace.</p>
+                    </div>
+                    <div class="min-w-[300px] max-w-[350px] snap-center shrink-0 card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">iBuy Adquirente</h3>
+                        <p>Receivables originator using Carnê Digital, BNPL, CDC, with automatic credit and FDIC
+                            anticipation flows.</p>
+                    </div>
+                    <div class="min-w-[300px] max-w-[350px] snap-center shrink-0 card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">RecBR</h3>
+                        <p>Receivables marketplace for trading invoices, NPs, and digital CCBs with assisted settlement
+                            and MTM.</p>
+                    </div>
+                    <div class="min-w-[300px] max-w-[350px] snap-center shrink-0 card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Traato</h3>
+                        <p>Financial micro ERP with integrated credit pipeline, cash flow management, and PJ microcredit
+                            with digital CCB support.</p>
+                    </div>
+                    <div class="min-w-[300px] max-w-[350px] snap-center shrink-0 card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Orbly</h3>
+                        <p>Digital wallet with QRCode-based instant payments, designed for integration with local
+                            businesses.</p>
+                    </div>
+                    <div class="min-w-[300px] max-w-[350px] snap-center shrink-0 card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Elbruus</h3>
+                        <p>RPA automation platform with visual interface and orchestration between legacy and modern
+                            systems.</p>
+                    </div>
+                    <div class="min-w-[300px] max-w-[350px] snap-center shrink-0 card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Calite</h3>
+                        <p>Wedding service marketplace with gift registry, vendor management, guest list, and integrated
+                            payments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="softskills" class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8">Soft Skills</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Leadership</h3>
+                        <p>Proven ability to guide multidisciplinary technical teams with a focus on delivery and human
+                            development.</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Communication</h3>
+                        <p>Fluency in translating technical concepts to executives and business stakeholders with
+                            clarity and impact.
+                        </p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Strategic Thinking</h3>
+                        <p>Systemic vision of platforms and business, combining technology with continuous value
+                            generation.</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Resilience</h3>
+                        <p>Strong performance under pressure, maintaining emotional stability and focus on solutions.
+                        </p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Collaboration</h3>
+                        <p>Teamwork across departments and profiles, fostering innovation and trust.</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Continuous Learning</h3>
+                        <p>Constant pursuit of personal and professional growth, quickly adapting to new challenges and
+                            technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="frameworks" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl text-blue-400 font-bold mb-8">Management Frameworks</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card p-6 rounded-xl shadow">
+                    <h3 class="text-xl font-semibold mb-2">Scrum</h3>
+                    <p>Practical application in agile squads, promoting iterative cycles and continuous improvement.</p>
+                </div>
+                <div class="card p-6 rounded-xl shadow">
+                    <h3 class="text-xl font-semibold mb-2">Kanban</h3>
+                    <p>Visual workflow management with a focus on operational efficiency and predictability.</p>
+                </div>
+                <div class="card p-6 rounded-xl shadow">
+                    <h3 class="text-xl font-semibold mb-2">Lean</h3>
+                    <p>Process optimization and waste elimination for lean and effective delivery.</p>
+                </div>
+                <div class="card p-6 rounded-xl shadow">
+                    <h3 class="text-xl font-semibold mb-2">OKR</h3>
+                    <p>Goal-setting and tracking methodology based on outcomes, promoting strategic alignment.</p>
+                </div>
+                <div class="card p-6 rounded-xl shadow">
+                    <h3 class="text-xl font-semibold mb-2">RUP</h3>
+                    <p>Used in regulated environments with emphasis on documentation, lifecycle and well-defined roles.
+                    </p>
+                </div>
+                <div class="card p-6 rounded-xl shadow">
+                    <h3 class="text-xl font-semibold mb-2">Canvas</h3>
+                    <p>Visual tool for business and product modeling, used during strategic conception phases.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solutions" class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8">Solutions</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Multi-Bank Router</h3>
+                        <p class="mb-2">Routing/switching solution for multiple banks (PIX, boletos, credit cards)</p>
+                        <p class="text-sm text-blue-300">Utilizado: .NET 8, AWS API Gateway, AWS App Runner, AWS Lambda,
+                            SNS, SQS,
+                            DynamoDB</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Multi-Pocket Wallet</h3>
+                        <p class="mb-2">Wallet microservice supporting multiple pockets (currencies, fees, etc.)</p>
+                        <p class="text-sm text-blue-300">Utilizado: .NET 8, AWS API Gateway, AWS App Runner, AWS Lambda,
+                            RDS Aurora
+                        </p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Multi-Currency Check-Out Web</h3>
+                        <p class="mb-2">Web checkout with multi-currency support</p>
+                        <p class="text-sm text-blue-300">Utilizado: .NET 8, AWS API Gateway, AWS App Runner, AWS Lambda,
+                            SNS, SQS,
+                            DynamoDB, Currency API</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Personal/Business Credit Pipeline</h3>
+                        <p class="mb-2">Credit approval service with credit risk and anti-fraud analysis</p>
+                        <p class="text-sm text-blue-300">Utilizado: API Gateway, MassTransit, MongDB, Serasa Score
+                            Credit, IdWall,
+                            ClearSale, B2E</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Receivables Certification (BNPL/Duplicates)</h3>
+                        <p class="mb-2">Receivables certification service based on NF-e validation and digital signature
+                        </p>
+                        <p class="text-sm text-blue-300">Utilizado: API Gateway, S3, MassTransit, HangFire, ClickSign,
+                            API Gov(NFe)
+                        </p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">KYC PF/PJ</h3>
+                        <p class="mb-2">Onboarding microservice with anti-fraud for individuals and businesses</p>
+                        <p class="text-sm text-blue-300">Utilizado: .NET, API Gateway, S3, AWS Lambda, Android, IOS,
+                            IdWall, B2e</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Virtual Bank - Receivables</h3>
+                        <p class="mb-2">Virtual banking layer for receivables registration, ownership change and
+                            reconciliation</p>
+                        <p class="text-sm text-blue-300">Utilizado: .NET, API Gateway, SQL Server, S3, AWS Lamda,
+                            Nexxera</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Multi-Region Core Banking Framework</h3>
+                        <p class="mb-2">Multi-region core banking with balance, transfers and reconciliation features
+                        </p>
+                        <p class="text-sm text-blue-300">Utilizado: .NET, WCF, WS-at, SQL Server, Distributed
+                            Applications,
+                            Distributed Transaction Coordenator, SOA Architecture</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Single Player / Multi Player Game Engine</h3>
+                        <p class="mb-2">Microservice for managing game round context for single and multiplayer games
+                        </p>
+                        <p class="text-sm text-blue-300">Utilizado: .NET 8, AWS Lambda, WebSocket, API Gateway,
+                            HangFire, AWS App
+                            Runner, DynamoDB</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Multiversion webhook protocol</h3>
+                        <p class="mb-2">Auto-registering webhook microservice with payload versioning</p>
+                        <p class="text-sm text-blue-300">Utilizado: AWS Lambda, SNS, API Gateway, DynamoDB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack" class="bg-white py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8">Technologies</h2>
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4">Languages</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        <span class="flex items-center justify-center bg-gray-100 py-2 px-4 rounded shadow"><i
+                                class="devicon-dotnetcore-plain colored mr-2"></i>.NET / .NET 8</span>
+                        <span class="flex items-center justify-center bg-gray-100 py-2 px-4 rounded shadow"><i
+                                class="devicon-java-plain colored mr-2"></i>Java</span>
+                        <span class="flex items-center justify-center bg-gray-100 py-2 px-4 rounded shadow"><i
+                                class="devicon-csharp-plain colored mr-2"></i>C#</span>
+                        <span class="flex items-center justify-center bg-gray-100 py-2 px-4 rounded shadow">C /
+                            C++</span>
+                        <span class="flex items-center justify-center bg-gray-100 py-2 px-4 rounded shadow"><i
+                                class="devicon-python-plain colored mr-2"></i>Python</span>
+                        <span class="flex items-center justify-center bg-gray-100 py-2 px-4 rounded shadow"><i
+                                class="devicon-javascript-plain colored mr-2"></i>JavaScript</span>
+                        <span class="flex items-center justify-center bg-gray-100 py-2 px-4 rounded shadow"><i
+                                class="devicon-typescript-plain colored mr-2"></i>TypeScript</span>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4">Frameworks & Tools</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">React</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Node</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Nest.JS</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">NIFI</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Docker</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Terraform</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">RabbitMQ</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">MassTransit</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">HangFire</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Git / GitHub Actions</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">WSO2</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">RPA</span>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4">Cloud & Integration</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">AWS</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Kafka</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">OpenAPI</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Swagger</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">REST / SOAP</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">JSON / XML</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">COM / DCOM</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Web Hooks</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Web Sockets</span>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4">DataBase</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">MySQL</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">SQL Server</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Oracle</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">MongoDB</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">ElasticSearch</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">DynamoDB</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Architecture & QA</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">CI/CD</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Clean Architecture</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">DDD</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">TDD</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">SOLID</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">EAI</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">EDI</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Enterprise Architecture</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Design Patterns</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Microserviços</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Distributed Transactions</span>
+                        <span class="bg-gray-100 py-2 px-4 rounded shadow">Distributed Applications</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="immersions" class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8">Immersions</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="card p-6 rounded-xl shadow flex items-start gap-4">
+                        <i class="devicon-tensorflow-original text-4xl text-orange-400"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1">Artificial Intelligence</h3>
+                            <p>LLMs, autonomous agents, MCP (Model Context Protocol), NLP, and AI-driven automation.</p>
+                        </div>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow flex items-start gap-4">
+                        <i class="devicon-blockchain-plain text-4xl text-yellow-400"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1">Blockchain e Web3</h3>
+                            <p>Exploration of decentralized technologies focused on smart contracts, asset tokenization,
+                                and open finance infrastructure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl text-blue-400 font-bold mb-8">Professional Experience</h2>
+            <ul class="alternate-area-color space-y-6">
+                <li>
+                    <h3 class="text-xl font-semibold">CTO – Wyrapay (2024 - 2025)</h3>
+                    <p>Payment initiator and multi-bank gateway with serverless architecture and multi-region operation.
+                        Led technical squads and deployed scalable, secure infrastructure.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-semibold">Co-founder – Stargaze (2023 - 2024)</h3>
+                    <p>Game platform with distributed architecture, custom game engines, and aggregator integration.
+                        Responsible for architecture, operations, and strategic planning.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-semibold">Chapter Lead – Tok&Stok (2020 - 2022)</h3>
+                    <p>Led architecture, integration, and automation chapters. Developed solutions for payments, B2B,
+                        fallbacks, and NIFI clusters. Co-managed infrastructure and operations.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-semibold">CTO / Co-founder – iVarejo (2008 - 2024)</h3>
+                    <p>Built the receivables origination and trading platform. Designed architecture, banking
+                        integrations, KYC, credit systems, onboarding, and managed regulator presentations.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-semibold">Solutions Architect – WDEV - Insurtech (2015 - 2017)</h3>
+                    <p>Designed digital products, claims apps, telemetry, and integration solutions for the insurance
+                        sector. Part of the Innovation Labs squad.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-semibold">Solutions Architect – BRQ (2004 - 2008)</h3>
+                    <p>Led technical squads and developed corporate solutions for major banks (Safra NY and Zurich).
+                        Supported pre-sales and certification initiatives (CMM, ISO).</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-semibold">Developer – M.I. Montreal (2000 - 2004)</h3>
+                    <p>Developed civil identification applications and participated in certified technical projects.</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-semibold">Intern / Developer – INOVAX (1996 - 2000)</h3>
+                    <p>Created telecom systems for call centers and IVRs. Worked with C++/Assembly and voice gateway
+                        integration.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education" class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8">Education</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Technology Management - Cloud Computing Focus – PUC RS
+                            (Remote)</h3>
+                        <p>April 2024 – December 2026</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Electronic Engineering – Universidade Veiga de Almeida,
+                            Rio de Janeiro</h3>
+                        <p>March 1998 – June 2000 (incomplete)</p>
+                    </div>
+                    <div class="card p-6 rounded-xl shadow">
+                        <h3 class="text-xl font-semibold mb-2">Technical Degree in Electronics and Telecommunications –
+                            Escola Técnica Rezende Rammel, Rio de Janeiro</h3>
+                        <p>March 1994 – December 1997</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="depoimentos" class="container mx-auto px-4 py-16">
+      <h2 class="text-3xl text-blue-400 font-bold mb-8">Depoimentos</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="card p-6 rounded-xl shadow">
+          <p class="italic">“Trabalhar com Daniel foi uma das experiências mais produtivas da minha carreira. Sua visão
+            arquitetural e capacidade de execução são incomparáveis.”</p>
+          <p class="mt-4 font-semibold text-blue-300">— Ana Ribeiro, CTO na FinTechX</p>
+        </div>
+        <div class="card p-6 rounded-xl shadow">
+          <p class="italic">“Daniel tem uma combinação rara de liderança técnica e empatia. Foi fundamental na
+            construção da nossa stack escalável e segura.”</p>
+          <p class="mt-4 font-semibold text-blue-300">— Carlos Mendes, Head de Produto na iVarejo</p>
+        </div>
+      </div>
+    </section> -->
+
+        <section id="contact" class="bg-white py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-4">Contact</h2>
+                <p class="text-lg">Feel free to reach out via <a href="mailto:daniel.assis.loureiro@gmail.com" class="text-blue-600 underline">daniel.assis.loureiro@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/danielassisloureiro" class="text-blue-600 underline">LinkedIn</a>.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="border-t mt-16 py-6 text-center text-sm">
+        &copy; 2025 Daniel Assis Loureiro da Silva. All rights reserved.
+    </footer>
+
+    <!-- <button onclick="scrollLeft()"
+    class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full shadow-md z-10">◀</button>
+  <button onclick="scrollRight()"
+    class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full shadow-md z-10">▶</button> -->
+
+    <script>
+        let scrollPosStartups = 0;
+        let scrollPosEmpresas = 0;
+        const containerStartups = document.querySelector('#startups .flex');
+        const scrollAmountStartups = 100;
+        const containerEmpresas = document.querySelector('#companies .flex');
+        const scrollAmountEmpresas = 100;
+        setInterval(() => {
+            if (!containerStartups) return;
+            scrollPosStartups = (scrollPosStartups + scrollAmountStartups) % containerStartups.scrollWidth;
+            containerStartups.scrollTo({ left: scrollPosStartups, behavior: 'smooth' });
+        }, 1500);
+
+        setInterval(() => {
+            if (!containerEmpresas) return;
+            scrollPosEmpresas = (scrollPosEmpresas + scrollAmountEmpresas) % containerEmpresas.scrollWidth;
+            containerEmpresas.scrollTo({ left: scrollPosEmpresas, behavior: 'smooth' });
+        }, 1000);
+
+        // function scrollLeft() {
+        //   container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        // }
+
+        // function scrollRight() {
+        //   container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        // }
+    </script>
+</body>
+
+</html>
